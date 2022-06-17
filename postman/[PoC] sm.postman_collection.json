@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "89eb2b0a-f5ea-4fd7-8317-227310d17104",
+		"name": "[PoC] sm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"Daniel\",\r\n    \"departament\": {\r\n        \"name\": \"TI\",\r\n        \"code\": \"2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sm?content=/secret/bff-api-1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sm"
+					],
+					"query": [
+						{
+							"key": "content",
+							"value": "/secret/bff-api-1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
